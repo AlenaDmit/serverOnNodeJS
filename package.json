@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "build": "babel src --out-file bundle.js",
+    "launch": "node bundle",
+    "start": "yarn run build && yarn run launch"
+  },
+  "name": "serverOnNodeJS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AlenaDmit/serverOnNodeJS.git",
+  "author": "alenadmit <dmitalyona@yandex.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.6.0",
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
