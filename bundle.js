@@ -24,12 +24,12 @@ var PORT = 4321;
 
 _http2.default.createServer(function (req, res) {
     var url = req.url;
-    var params = "";
-    if (url.indexOf("?") >= 0) {
-        params = url.substr(url.indexOf("?") + 1);
-        url = url.slice(0, url.indexOf("?"));
+    var params = '';
+    if (url.indexOf('?') >= 0) {
+        params = url.substr(url.indexOf('?') + 1);
+        url = url.slice(0, url.indexOf('?'));
     }
-    res.setHeader("MyName", "Alena");
+    res.setHeader('MyName', 'Alena');
     console.log(url);
     console.log(params);
 
