@@ -10,12 +10,12 @@ http
 .createServer(
     (req, res) => {
         let url = req.url;
-        let params = "";
-        if (url.indexOf("?") >=0 ) {
-            params = url.substr(url.indexOf("?") + 1);
-            url = url.slice(0, url.indexOf("?"));
+        let params = '';
+        if (url.indexOf('?') >=0 ) {
+            params = url.substr(url.indexOf('?') + 1);
+            url = url.slice(0, url.indexOf('?'));
         }
-        res.setHeader("MyName", "Alena");
+        res.setHeader('MyName', 'Alena');
         console.log(url);
         console.log(params);
 
@@ -26,8 +26,8 @@ http
 
             case '/mur.txt':
             case '/mur2.txt':
-                console.log('I got this!')
-                console.log(__dirname)
+                console.log('I got this!');
+                console.log(__dirname);
 
                 $(fs.readFile)(path.join(__dirname, req.url))
                     .then(data => res.end(String(data)))
